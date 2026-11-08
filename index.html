@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Rivera · Software Engineering Student</title>
+  <meta name="description" content="Portfolio of Alex Rivera, computer science student at Example University: Python, web services, data.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/avatar.svg">
+</head>
+<body>
+  <!-- Sample portfolio site. Replace every "Alex Rivera" detail with your own. -->
+  <header class="hero">
+    <img class="avatar" src="images/avatar.svg" alt="Alex Rivera" width="120" height="120">
+    <div>
+      <h1>Alex Rivera</h1>
+      <p class="tagline">Computer science student at Example University · Python · web services · data</p>
+      <p class="looking">Looking for a <strong>summer 2027 software engineering internship</strong> in New York.</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/git-tutorial-demo">GitHub</a>
+        <!-- add resume.pdf to the repository, then: <a href="resume.pdf">Résumé (PDF)</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="images/digit-sketchpad.jpg" alt="Digit Sketchpad: a hand-drawn 4 read by the model with 99.8% confidence">
+          <div class="body">
+            <h3>Digit Sketchpad</h3>
+            <p>Draw a digit in the browser; a convolutional network on a FastAPI server reads it and shows ten
+               probability bars. 50/50 test sketches read correctly.</p>
+            <p class="stack">PyTorch · FastAPI · JavaScript · HTML5 canvas</p>
+            <p class="links"><a href="https://github.com/git-tutorial-demo/digit-sketchpad">Code</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/weather-stats.png" alt="Weather Stats in the terminal: a year of weather for four cities">
+          <div class="body">
+            <h3>Weather Stats</h3>
+            <p>Summarises a year of daily weather for four cities, prints a table and writes an HTML report.
+               Mumbai's monsoon brings almost five times London's yearly rain.</p>
+            <p class="stack">Python (standard library) · unittest</p>
+            <p class="links"><a href="https://github.com/git-tutorial-demo/weather-stats">Code</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/log-detective.png" alt="Log Detective: anomaly scores of web-server clients">
+          <div class="body">
+            <h3>Log Detective</h3>
+            <p>Finds brute-force attackers, scanners and scrapers in a web-server access log with an
+               Isolation Forest, and explains why each client was flagged.</p>
+            <p class="stack">Python · pandas · scikit-learn · Matplotlib</p>
+            <p class="links"><a href="https://github.com/git-tutorial-demo/log-detective">Code</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="chips">
+        <li>Python</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>HTML/CSS</li>
+        <li>REST APIs</li><li>FastAPI</li><li>scikit-learn</li><li>PyTorch</li>
+        <li>Git and GitHub</li><li>Linux</li><li>Docker</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a computer science student at Example University. I like building small services that people can actually use, and measuring
+         whether they work. Outside class I tutor high-school students in programming.</p>
+      <p>Contact: <a href="mailto:alex.rivera@example.com">alex.rivera@example.com</a> ·
+         <a href="https://www.linkedin.com/in/alex-rivera-example">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Alex Rivera · Built with plain HTML and CSS · Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* style.css - sample portfolio site (Git and GitHub for Your Career, Lab 5). Plain CSS, no frameworks, works on phones (try a narrow window). */
+:root {
+  --navy: #1f4e79;
+  --cyan: #0090c8;
+  --ink: #1a2a38;
+  --gray: #5a6472;
+  --bg: #f4f7fa;
+  --card: #ffffff;
+  --line: #d5dee8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #e6edf3; --gray: #9fb0c0; --bg: #0d1117; --card: #161b22; --line: #30363d; --navy: #79c0ff; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+a { color: var(--cyan); }
+
+.hero {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.avatar { border-radius: 50%; border: 4px solid var(--cyan); flex-shrink: 0; }
+
+h1 { margin: 0; font-size: 2.4rem; color: var(--navy); }
+h2 { color: var(--navy); border-bottom: 3px solid var(--cyan); display: inline-block; padding-bottom: .2rem; }
+h3 { margin: 0 0 .4rem; color: var(--navy); }
+
+.tagline { margin: .3rem 0; font-size: 1.15rem; color: var(--gray); }
+.looking { margin: .3rem 0 1rem; }
+
+nav a {
+  display: inline-block;
+  margin: 0 .4rem .4rem 0;
+  padding: .35rem .9rem;
+  border: 1px solid var(--cyan);
+  border-radius: 999px;
+  text-decoration: none;
+}
+nav a:hover { background: var(--cyan); color: #fff; }
+
+main { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+section { margin-bottom: 2.5rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img { width: 100%; height: 170px; object-fit: cover; background: #fff; border-bottom: 1px solid var(--line); }
+.card .body { padding: 1rem 1.1rem; }
+.card p { margin: .3rem 0; }
+.stack { color: var(--gray); font-size: .9rem; }
+.links a { font-weight: 600; }
+
+.chips { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.chips li { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .3rem .8rem; }
+
+footer { text-align: center; color: var(--gray); font-size: .9rem; padding: 2rem 1rem; }
+
+@media (max-width: 640px) {
+  .hero { flex-direction: column; text-align: center; }
+  h1 { font-size: 2rem; }
+}
